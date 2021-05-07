@@ -11,6 +11,9 @@ html html, html body, html h1 {
   margin: 0;
   padding: 0;
 }
+html body {
+  font-family: "Roboto", sans-serif;
+}
 
 .logo {
   width: 100%;
@@ -19,7 +22,6 @@ html html, html body, html h1 {
 .logo h1 {
   color: white;
   padding: 12px 0 12px 83px;
-  font-family: "Roboto", sans-serif;
 }
 
 .content_nav {
@@ -38,11 +40,15 @@ html html, html body, html h1 {
 
 .sort_name {
   position: relative;
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
   color: #b5b5b5;
   border-bottom: 1px solid #c4c4c4;
   margin: 25px 0 19px 0;
+  font-size: 18px;
+}
+@media (max-width: 776px) {
+  .sort_name {
+    font-size: 24px;
+  }
 }
 
 .description {
@@ -50,14 +56,17 @@ html html, html body, html h1 {
 }
 .description button {
   margin-bottom: 118px;
-  width: 112px;
-  height: 31px;
+  padding: 7px 35px;
   border: none;
-  font-size: 18px;
-  font-family: "Roboto", sans-serif;
   color: white;
   background-color: mediumturquoise;
   cursor: pointer;
+  font-size: 18px;
+}
+@media (max-width: 776px) {
+  .description button {
+    font-size: 24px;
+  }
 }
 .description .description button,
 .description .description button:active,
@@ -67,10 +76,14 @@ html html, html body, html h1 {
 .description p {
   color: #b5b5b5;
   border-top: 1px solid #c4c4c4;
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
   margin-top: -99px;
   padding-top: 15px;
+  font-size: 18px;
+}
+@media (max-width: 776px) {
+  .description p {
+    font-size: 24px;
+  }
 }
 
 footer {
@@ -83,8 +96,12 @@ footer {
 }
 footer p, footer a {
   color: white;
-  font-family: "Roboto", sans-serif;
   font-size: 18px;
+}
+@media (max-width: 776px) {
+  footer p, footer a {
+    font-size: 24px;
+  }
 }
 footer a {
   text-decoration: none;
