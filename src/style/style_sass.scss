@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
+
 @mixin small-text {
   font-size: 18px;
 }
+
 @mixin large-text {
   font-size: 24px;
 }
@@ -13,21 +16,28 @@
 html {
   box-sizing: border-box;
   overflow-x: hidden;
+
   html, body, h1 {
     margin: 0;
     padding: 0;
   }
+
   body {
     font-family: "Roboto", sans-serif;
+    header {
+      background-color: mediumturquoise;
+    }
   }
 }
 
 .logo {
   width: 100%;
-  background-color: mediumturquoise;
   h1 {
     color: white;
     padding: 12px 0 12px 83px;
+    @media (max-width: 776px) {
+      padding-left: 17px;
+    }
   }
 }
 
@@ -35,10 +45,12 @@ html {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+
   canvas {
     width: 600px;
     height: 260px;
   }
+
   .comb_sort, .coctail_sort {
     width: 500px;
     margin-left: -5px;
@@ -49,7 +61,7 @@ html {
   position: relative;
   color: #b5b5b5;
   border-bottom: 1px solid #c4c4c4;
-  margin: 25px 0 19px 0;
+  margin: 21px 0 19px 0;
   @include small-text;
   @media (max-width: 776px) {
     @include large-text;
@@ -58,6 +70,7 @@ html {
 
 .description {
   margin-bottom: 30px;
+
   button {
     margin-bottom: 118px;
     padding: 7px 35px;
@@ -66,25 +79,27 @@ html {
     background-color: mediumturquoise;
     cursor: pointer;
     @include small-text;
-      @media (max-width: 776px) {
-        @include large-text;
+    @media (max-width: 776px) {
+      @include large-text;
     }
   }
-    .description button,
-    .description button:active,
-    .description button:focus {
-      outline: none;
+
+  .description button,
+  .description button:active,
+  .description button:focus {
+    outline: none;
   }
+
   p {
-     color: #b5b5b5;
-     border-top: 1px solid #c4c4c4;
-     margin-top: -99px;
-     padding-top: 15px;
+    color: #b5b5b5;
+    border-top: 1px solid #c4c4c4;
+    margin-top: -99px;
+    padding-top: 15px;
     @include small-text;
     @media (max-width: 776px) {
       @include large-text;
     }
-   }
+  }
 }
 
 footer {
@@ -94,6 +109,10 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 0 87px 0 87px;
+  @media (max-width: 776px) {
+    padding: 0 23px 0 16px;
+  }
+
   p, a {
     color: white;
     @include small-text;
@@ -102,8 +121,15 @@ footer {
     }
   }
 
-    a {
+  a {
     text-decoration: none;
+    display: flex;
+    align-items: center;
+
+    .fa {
+      font-size: 40px;
+      padding-right: 6px;
+    }
   }
 }
 

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
 *, *:after, *:before {
   box-sizing: inherit;
 }
@@ -14,14 +15,21 @@ html html, html body, html h1 {
 html body {
   font-family: "Roboto", sans-serif;
 }
+html body header {
+  background-color: mediumturquoise;
+}
 
 .logo {
   width: 100%;
-  background-color: mediumturquoise;
 }
 .logo h1 {
   color: white;
   padding: 12px 0 12px 83px;
+}
+@media (max-width: 776px) {
+  .logo h1 {
+    padding-left: 17px;
+  }
 }
 
 .content_nav {
@@ -42,7 +50,7 @@ html body {
   position: relative;
   color: #b5b5b5;
   border-bottom: 1px solid #c4c4c4;
-  margin: 25px 0 19px 0;
+  margin: 21px 0 19px 0;
   font-size: 18px;
 }
 @media (max-width: 776px) {
@@ -94,6 +102,11 @@ footer {
   align-items: center;
   padding: 0 87px 0 87px;
 }
+@media (max-width: 776px) {
+  footer {
+    padding: 0 23px 0 16px;
+  }
+}
 footer p, footer a {
   color: white;
   font-size: 18px;
@@ -105,6 +118,12 @@ footer p, footer a {
 }
 footer a {
   text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+footer a .fa {
+  font-size: 40px;
+  padding-right: 6px;
 }
 
-/*# sourceMappingURL=style-new.css.map */
+/*# sourceMappingURL=style.css.map */

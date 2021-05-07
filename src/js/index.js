@@ -1,4 +1,4 @@
-import '/src/js/script_comb.js';
-import '/src/js/script_shake.js';
+import '/src/js/algorithms/alg_comb_sort.js';
+import '/src/js/algorithms/alg_shake_sort.js';
 
-import "/src/style/style-sass.scss";
+import "/src/style/style_sass.scss";

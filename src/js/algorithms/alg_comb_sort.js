@@ -1,5 +1,5 @@
-import {initRandomNumbers} from './array-script.js';
-import {drawArray} from './draw-sort-comb.js';
+import {initRandomNumbers} from '/src/js/array_for_sort';
+import {drawArray} from '/src/js/draw_sort_comb.js';
 
 let buttonStartOne = document.querySelector('.button_start_one');
 let intervalId;
