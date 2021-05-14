@@ -1,0 +1,15 @@
+header {
+  background-color: mediumturquoise;
+}
+
+.logo {
+  width: 100%;
+
+  h1 {
+    color: white;
+    padding: 12px 0 12px 83px;
+    @media (max-width: 776px) {
+      padding-left: 17px;
+    }
+  }
+}
